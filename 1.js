@@ -95,8 +95,8 @@ String.prototype.divide = function (numStr) {
     let borrow = 0;
   
     for (let i = a.length - 1, j = b.length - 1; i >= 0; i--, j--) {
-      let digitA = parseInt(a[i]);
-      let digitB = j >= 0 ? parseInt(b[j]) : 0;
+      let digitA = Number(a[i]);
+      let digitB = j >= 0 ? Number(b[j]) : 0;
   
       let diff = digitA - digitB - borrow;
   
